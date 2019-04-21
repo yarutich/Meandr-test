@@ -1,0 +1,35 @@
+body {
+  font-family: "DIN Pro Regular";
+}
+
+.heading-h2 {
+  margin: 0;
+  font-family: "DIN Pro Reular", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: -0.02em;
+  //   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading-h2 {
+        font-size: 32px;
+    }
+}
+
+.heading-h2--light {
+  color: $white;
+}
+
+.accent {
+  color: $accent;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  font-family: $gilroy;
+  text-transform: uppercase;
+}

@@ -1,0 +1,29 @@
+.mind {
+  padding: 100px 0;
+}
+
+.mind__heading {
+  padding: 0 100px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.mind__body {
+  padding: 0 100px;
+  font-family: "Roboto Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-text;
+}
+
+@media screen and (max-width: 768px) {
+  .mind {
+    padding: 60px 0;
+  }
+  .mind__heading,
+  .mind__body {
+    padding: 0;
+  }
+}
