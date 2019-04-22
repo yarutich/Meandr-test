@@ -1,7 +1,7 @@
 # Meandr-test-task-from-Umilabs
 
-## DEMO
-([Meandr](https://yarutich.github.io/Meandr/)
+### DEMO:
+[Meandr](https://yarutich.github.io/Meandr/)
 
 
 ### Требования:
