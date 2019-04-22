@@ -5,7 +5,7 @@
 
 
 ### Требования:
-1. pixel perfect
+1. [pixel perfect](https://yarutich.github.io/Meandr/pp-yarutich.github.io.png)
 2. validation JS ([Just-validate](https://github.com/horprogs/Just-validate) + [imaskjs](https://github.com/uNmAnNeR/imaskjs))
 3. no CSS framework
 4. IE (11)
