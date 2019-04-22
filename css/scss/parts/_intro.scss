@@ -6,7 +6,8 @@
 }
 
 .intro__heading {
-  margin-bottom: 24px;
+  margin-bottom: 0px;
+  margin-top: 38px;
 }
 
 .intro__descr {
@@ -21,12 +22,31 @@
 }
 
 .intro__btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   color: $color-heading;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: ease-in-out 100ms;
+  border-radius: 100px;
+  padding-right: 15px;
+
+  &:hover {
+    background: $light;
+    border-radius: 100px;
+    transition: ease-in-out 100ms;
+
+    span {
+      margin-right: 8px;
+      transition: ease-in-out 100ms;
+    }
+
+    svg {
+      transform: rotate(180deg);
+      transition: ease-in-out 200ms;
+    }
+  }
 
   & span {
     display: flex;

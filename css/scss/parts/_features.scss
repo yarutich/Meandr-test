@@ -1,19 +1,23 @@
 .features {
-  padding: 120px 0 160px 0;
+  padding: 120px 0 145px 0;
   background: $light;
 }
 
 .features__heading {
+  font-size: 40px;
   margin-bottom: 60px;
 }
 
 .features__items {
   display: flex;
   justify-content: space-between;
+  margin: 0 -15px;
+
 }
 
 .features__item {
-  max-width: 332px;
+  max-width: 376px;
+  padding-right: 50px;
 }
 
 .features__head {

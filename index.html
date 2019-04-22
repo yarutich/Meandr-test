@@ -91,7 +91,7 @@
 
     <section class="features">
         <div class="container">
-            <h2 class="features__heading heading-h2">Приемущества работы с нами</h2>
+            <h2 class="features__heading heading-h2">Преимущества работы с нами</h2>
             <div class="features__items">
                 <div class="features__item">
                     <svg class="features__icon" xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none">
@@ -133,38 +133,41 @@
                         <div class="form__step">1</div>
                         <div class="form__descr">Фамилия и имя</div>
                     </div>
-                    <input type="text" id="first-last-name" class="form__input" placeholder="Сидоров Александр">
+                    <input type="text" class="form__input" placeholder="Сидоров Александр" name="full-name" data-validate-field="name">
                 </div>
                 <div class="form__item">
                     <div class="form__label">
                         <div class="form__step">2</div>
                         <div class="form__descr">Электронная почта</div>
                     </div>
-                    <input type="text" id="first-last-name" class="form__input" placeholder="Sidorov@yandex.ru">
+                    <input type="text" class="form__input" placeholder="Sidorov@yandex.ru" name="email"
+                        data-validate-field="email">
                 </div>
                 <div class="form__item">
                     <div class="form__label">
                         <div class="form__step">3</div>
                         <div class="form__descr">Телефон</div>
                     </div>
-                    <input type="text" id="first-last-name" class="form__input" placeholder="+7 (999)-328-14-20">
+                    <input type="text" id="phone-mask" class="form__input" placeholder="+7 (999)-328-14-20" name="phone" data-validate-field="tel">
                 </div>
                 <div class="form__item">
                     <div class="form__label">
                         <div class="form__step">4</div>
                         <div class="form__descr">Какой деятельностью, не связанной с текущими проектами, вы бы хотели
-                            заниматься в рабочее
-                            время?</div>
+                            заниматься в рабочее время?</div>
                     </div>
-                    <textarea id="first-last-name" class="form__input form__input--textarea"
-                        placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
+                    <textarea class="form__input form__input-textarea"
+                        placeholder="Свой проект по созданию универсальной инфраструктуры строительства" data-validate-field="text"></textarea>
                 </div>
                 <div class="form__item">
-                    <input type="submit" class="form__btn btn">
+                    <input type="submit" class="form__btn btn" value="Отправить">
                 </div>
             </form>
         </div>
     </section>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

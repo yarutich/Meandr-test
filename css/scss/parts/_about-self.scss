@@ -1,27 +1,32 @@
 .about-self {
-  padding: 100px 0 120px 0;
+  padding: 100px 0 100px 0;
   background: $dark;
   color: $white;
 }
 
 .about-self__heading {
-  margin-bottom: 80px;
+  font-size: 40px;
+  margin-bottom: 68px;
 }
 
 .about-self__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & .form__item {
+    &:nth-child(4) {
+      & .form__step {
+        width: 80px;
+      }
+    }
+  }
 }
 
 .form__item {
   max-width: 575px;
   width: 100%;
-  margin-bottom: 70px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-bottom: 25px;
 }
 
 .form__label {
@@ -31,7 +36,7 @@
 
 .form__step {
   color: $accent;
-  margin-left: -94px;
+  margin-left: -92px;
   font-family: $roboto;
   display: flex;
   justify-content: center;
@@ -39,7 +44,7 @@
   width: 64px;
   height: 64px;
   margin-right: 28px;
-  border: 1px solid $white;
+  border: 1px solid rgba($white, 0.3);
   border-radius: 32px;
 }
 
@@ -50,18 +55,19 @@
 }
 
 .form__input {
-  padding: 12px 0;
+  padding: 4px 0 15px 0;
   background: none;
-  border: none;
+  border: none !important;
   max-width: 575px;
   width: 100%;
-  border-bottom: 2px solid rgba(#f7f8fa, 0.1);
+  border-bottom-width: 2px !important;
+  border-bottom-style: solid !important;
+  border-color: rgba(#f7f8fa, 0.1);
   font-family: "Roboto Regular", sans-serif;
   font-size: 24px;
   line-height: 35px;
   letter-spacing: -0.01em;
-  color: $white;
-  opacity: 0.3;
+  color: rgba($white, 0.3);
   outline: none;
 
   &::placeholder {
@@ -73,8 +79,8 @@
     opacity: 0.3;
   }
 
-  &--text-area {
-    height: 70px;
+  &-textarea {
+    padding: 28px 0 16px 0;
   }
 }
 
@@ -89,6 +95,7 @@
   background: $white;
   color: $accent;
   border-radius: 100px;
+  margin-top: 9px;
 
   &:hover {
     background: $accent;
@@ -109,13 +116,13 @@
   }
 }
 @media screen and (max-width: 768px) {
-    .about-self {
-        padding: 60px 0;
+  .about-self {
+    padding: 60px 0;
+  }
+  .form__input {
+    &::placeholder {
+      font-size: 18px;
+      line-height: 26px;
     }
-    .form__input {
-        &::placeholder {
-          font-size: 18px;
-          line-height: 26px;
-        }
   }
 }
