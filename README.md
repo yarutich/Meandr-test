@@ -1,7 +1,5 @@
 # Meandr-test-task-from-Umilabs
 
-Тестовое задание:
-
 Требования:
 1. pixel perfect
 2. validation JS ([Just-validate](https://github.com/horprogs/Just-validate) + [imaskjs](https://github.com/uNmAnNeR/imaskjs))
